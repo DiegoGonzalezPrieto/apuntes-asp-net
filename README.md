@@ -79,7 +79,11 @@
 Se puede combinar los DDL enlazados con UpdatePanel (dejarlos a ambos adentro
 de un UpdatePanel) para que se actualice solamente esa parte de la página.
 
-#### Seleccionar programáticamente el valor de un DDL:
+#### Seleccionar programáticamente el valor de un DDL
+
+	- En code behind se puede camiar el indice seleccionado:
+		``` ddlUno.SelectedIndex = ddlUno.Items.IndexOf(ddlUno.Items.FindByValue(id))  ```
+
 
 
 ### Crear Pokemon
