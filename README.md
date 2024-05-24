@@ -39,6 +39,17 @@
 				ddlMiDropDown.DataBind();
 				}
 			```
+- DDL Enlazados
+	- Elegis algo en primer ddl y eso cambia opciones en otro ddl
+	- El primer DDL asp:DropDownList tiene el AutoPostBack="true"
+	para que el DDL dispare el postback
+	- y OnSelectedIndexChanged=(evento)
+	- El segundo DDL está normal, pero tiene ID
+	- codebehind del primer DDL:
+	```C#
+
+	```
+
 
 
 
