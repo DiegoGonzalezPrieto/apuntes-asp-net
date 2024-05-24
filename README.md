@@ -1,7 +1,6 @@
 
 
 
-## Interacción con Bases de Datos
 
 
 ### Seteos varios del proyecto
@@ -94,7 +93,7 @@ ddlUno.SelectedIndex = -1; // borra selección
 ddlUno.Items.FindByValue(id).Selected = true;
 ```
 
-
+## Interacción con Bases de Datos
 
 ### Crear Pokemon
 
