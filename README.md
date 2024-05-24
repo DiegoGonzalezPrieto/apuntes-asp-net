@@ -83,19 +83,16 @@ de un UpdatePanel) para que se actualice solamente esa parte de la página.
 
 En code behind se puede cambiar el indice seleccionado:
 
-	```C#
-		ddlUno.SelectedIndex = ddlUno.Items.IndexOf(ddlUno.Items.FindByValue(id));
-
-	```
+```C#
+ddlUno.SelectedIndex = ddlUno.Items.IndexOf(ddlUno.Items.FindByValue(id));
+```
 
 O sino:
 
-	```
-
-	ddlUno.SelectedIndex = -1; // borra selección
-	ddlUno.Items.FindByValue(id).Selected = true;
-
-	```
+```C#
+ddlUno.SelectedIndex = -1; // borra selección
+ddlUno.Items.FindByValue(id).Selected = true;
+```
 
 
 
