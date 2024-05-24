@@ -55,7 +55,7 @@
 		ddlUno.DataValueField = "Id"; // el valor que queda seleccionado por abajo
 		ddlUno.DataBind();
 	}
-```
+	```
 	- codebehind en evento de OnSelectedIndexChanged:
 	```C#
 	OnSelectedIndexChanged...() {
@@ -79,6 +79,7 @@
 Se puede combinar los DDL enlazados con UpdatePanel (dejarlos a ambos adentro
 de un UpdatePanel) para que se actualice solamente esa parte de la página.
 
+- Seleccionar programáticamente el valor de un DDL:
 
 
 ### Crear Pokemon
