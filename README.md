@@ -43,10 +43,26 @@
 	- Elegis algo en primer ddl y eso cambia opciones en otro ddl
 	- El primer DDL asp:DropDownList tiene el AutoPostBack="true"
 	para que el DDL dispare el postback
-	- y OnSelectedIndexChanged=(evento)
+		- y OnSelectedIndexChanged=(evento)
+
 	- El segundo DDL está normal, pero tiene ID
-	- codebehind del primer DDL:
+
+	- codebehind en page_load:
 	```C#
+	page_load() {
+		ddlUno.DataSource = negocio.listar();
+		ddlUno.DataTextField = "Descripcion"; // lo que muestra el DDL
+		ddlUno.DataValueField = "Id"; // el valor que queda seleccionado por abajo
+		ddlUno.DataBind();
+	}
+```
+	- codebehind en evento de OnSelectedIndexChanged:
+	```C#
+	OnSelectedIndexChanged...() {
+		int id = int.Parse(ddlUno.SelectedItem.Value);
+		//	... filtrar la lsita del ddlDos
+		ddlDos.DataBind();
+	}
 
 	```
 
