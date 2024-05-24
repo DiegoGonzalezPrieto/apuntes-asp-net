@@ -6,6 +6,15 @@
 
 ### Seteos varios del proyecto
 
+- Paginador en GridView
+
+- Para **selección** de elemento de lista:
+	- Agrega DataKeyName="Id" en en GridView
+	- Agrega CommandField en las columnas con prop ShowSelectedButton="true"
+	- Agrega evento OnSelectedIndexChanged en GridView
+		- En code behind de este método captura el valor con:
+			- dgvMiView.SelectedDataKey.Value.ToString() -> me da el Id del item
+
 ### DropDownList y Update Panel
 
 ### Crear Pokemon
