@@ -26,6 +26,22 @@
 
 ### DropDownList y Update Panel
 
+- UpdatePanel para actualizar partes de la página en vez de toda la página.
+
+- DDL puede ser estático o desde BD
+	- Estático: asp:DropDownList que contiene varios asp:ListItem
+
+	- Desde BD: se le sacan los asp:ListItem
+		- en code behind: 
+			``` C#
+				page_load() { 
+				ddlMiDropDown.DataSource = negocio.ListarItems(); 
+				ddlMiDropDown.DataBind();
+				}
+			```
+
+
+
 ### Crear Pokemon
 
 ### Modificar Pokemon
