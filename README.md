@@ -76,6 +76,9 @@
 		y los postbacks que deben capturarse
 
 
+Se puede combinar los DDL enlazados con UpdatePanel (dejarlos a ambos adentro
+de un UpdatePanel) para que se actualice solamente esa parte de la página.
+
 
 
 ### Crear Pokemon
