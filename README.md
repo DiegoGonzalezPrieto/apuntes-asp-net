@@ -6,7 +6,16 @@
 
 ### Seteos varios del proyecto
 
-- Paginador en GridView
+- Paginador en GridView:
+	- AllowPaging="true" en GridView
+	- PageSize="5"
+	- OnPageIndexChanging=(evento)
+		```
+			evento_code_behind(GridViewPageEventArgs e) { 
+			dgvMiView.PageIndex = e.NewPageIndex;
+			dgvMiView.DataBind();
+			}
+		```
 
 - Para **selección** de elemento de lista:
 	- Agrega DataKeyName="Id" en en GridView
