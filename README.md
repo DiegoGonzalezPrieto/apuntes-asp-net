@@ -26,7 +26,6 @@
 
 ### DropDownList y Update Panel
 
-- UpdatePanel para actualizar partes de la página en vez de toda la página.
 
 - DDL puede ser estático o desde BD
 	- Estático: asp:DropDownList que contiene varios asp:ListItem
@@ -50,6 +49,7 @@
 	- codebehind en page_load:
 	```C#
 	page_load() {
+		// solo si NO es postback
 		ddlUno.DataSource = negocio.listar();
 		ddlUno.DataTextField = "Descripcion"; // lo que muestra el DDL
 		ddlUno.DataValueField = "Id"; // el valor que queda seleccionado por abajo
@@ -60,11 +60,20 @@
 	```C#
 	OnSelectedIndexChanged...() {
 		int id = int.Parse(ddlUno.SelectedItem.Value);
-		//	... filtrar la lsita del ddlDos
+		//	... filtrar la lista que va en el ddlDos
 		ddlDos.DataBind();
 	}
 
 	```
+
+- UpdatePanel para actualizar partes de la página en vez de toda la página.
+	- Actualiza un fragmento del HTML solamente.
+
+	- en .aspx necesitamos un asp:ScriptManager (nada más) para que esté el JS necesario
+
+	- en .aspx se agrega un <asp:UpdatePanel> que contiene un <ContentTemplate>
+		- dentro del ContentTemplate va todo el html que debe actualizarse
+		y los postbacks que deben capturarse
 
 
 
