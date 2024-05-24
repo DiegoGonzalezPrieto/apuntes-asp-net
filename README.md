@@ -10,7 +10,7 @@
 	- AllowPaging="true" en GridView
 	- PageSize="5"
 	- OnPageIndexChanging=(evento)
-		```
+		```C#
 			evento_code_behind(GridViewPageEventArgs e) { 
 			dgvMiView.PageIndex = e.NewPageIndex;
 			dgvMiView.DataBind();
