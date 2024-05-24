@@ -82,13 +82,19 @@ de un UpdatePanel) para que se actualice solamente esa parte de la página.
 #### Seleccionar programáticamente el valor de un DDL
 
 	- En code behind se puede cambiar el indice seleccionado:
+
 		```
-		ddlUno.SelectedIndex = ddlUno.Items.IndexOf(ddlUno.Items.FindByValue(id));
+			ddlUno.SelectedIndex = ddlUno.Items.IndexOf(ddlUno.Items.FindByValue(id));
+
 		```
+
 		ó
+
 		```
+
 		ddlUno.SelectedIndex = -1; // borra selección
 		ddlUno.Items.FindByValue(id).Selected = true;
+
 		```
 
 
