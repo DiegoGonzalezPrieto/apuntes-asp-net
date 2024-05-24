@@ -6,7 +6,7 @@
 
 ### Seteos varios del proyecto
 
-- Paginador en GridView:
+#### Paginador en GridView:
 	- AllowPaging="true" en GridView
 	- PageSize="5"
 	- OnPageIndexChanging=(evento)
@@ -17,7 +17,7 @@
 			}
 		```
 
-- Para **selección** de elemento de lista:
+#### Para **selección** de elemento de lista:
 	- Agrega DataKeyName="Id" en en GridView
 	- Agrega CommandField en las columnas con prop ShowSelectedButton="true"
 	- Agrega evento OnSelectedIndexChanged en GridView
@@ -27,7 +27,7 @@
 ### DropDownList y Update Panel
 
 
-- DDL puede ser estático o desde BD
+#### DDL puede ser estático o desde BD
 	- Estático: asp:DropDownList que contiene varios asp:ListItem
 
 	- Desde BD: se le sacan los asp:ListItem
@@ -38,7 +38,7 @@
 				ddlMiDropDown.DataBind();
 				}
 			```
-- DDL Enlazados
+#### DDL Enlazados
 	- Elegis algo en primer ddl y eso cambia opciones en otro ddl
 	- El primer DDL asp:DropDownList tiene el AutoPostBack="true"
 	para que el DDL dispare el postback
@@ -66,7 +66,7 @@
 
 	```
 
-- UpdatePanel para actualizar partes de la página en vez de toda la página.
+#### UpdatePanel para actualizar partes de la página en vez de toda la página.
 	- Actualiza un fragmento del HTML solamente.
 
 	- en .aspx necesitamos un asp:ScriptManager (nada más) para que esté el JS necesario
@@ -79,7 +79,7 @@
 Se puede combinar los DDL enlazados con UpdatePanel (dejarlos a ambos adentro
 de un UpdatePanel) para que se actualice solamente esa parte de la página.
 
-- Seleccionar programáticamente el valor de un DDL:
+#### Seleccionar programáticamente el valor de un DDL:
 
 
 ### Crear Pokemon
