@@ -107,8 +107,15 @@ ddlUno.Items.FindByValue(id).Selected = true;
 
 `ddl.DataBind()`
 
-3. Evento Aceptar
+3. Evento Aceptar:
 
+Debe capturar todos los valores del formulario en un objeto del modelo creado.
+Luego con el objeto de negocio crear el nuevo registro.
+
+#### Manejo de Error
+
+Try Catch y además guardar el la excepción en la session.  
+Luego redirigir a /error con ese dato.
 
 
 ### Modificar Pokemon
