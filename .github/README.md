@@ -1,1 +1,1 @@
-apuntes.md
+../apuntes.md
