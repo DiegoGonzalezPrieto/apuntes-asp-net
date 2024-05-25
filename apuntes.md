@@ -169,7 +169,7 @@ cuando el registro está inactivo. (Y viceversa)
 
 ### Filtro rápido
 
-Filtre automáticamente a medida que escribimos.
+Que filtre automáticamente a medida que escribimos.
 
 1. Agregar asp:TextBox con AutoPostBack="true" OnTextChanged="(evento)"
 2. En el evento de OnTextChanged:
@@ -184,6 +184,9 @@ dgvMiView.DataBind();
 
 
 ### Filtro avanzado
+
+
+
 
 ### Login y Permisos
 
