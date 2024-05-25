@@ -102,7 +102,12 @@ ddlUno.Items.FindByValue(id).Selected = true;
 	txtId.Enabled = false;
 	```
 2. Cargar desplegables. (Si no es Postback)
-`ddl.DataValueField` y `ddl.DataTextField`
+
+`ddl.DataValueField = "Id"` y `ddl.DataTextField="Nombre"`
+
+`ddl.DataBind()`
+
+3. Evento Aceptar
 
 
 
