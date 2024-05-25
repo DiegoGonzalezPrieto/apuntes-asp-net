@@ -129,6 +129,7 @@ del registro y permitir modificar.
 si NO es Postback.
 
 ```C#
+// if (!IsPostBack) ...
 if (Request.QuerString["id"] != null) // ... cargar datos
 
 // x ej: negocio.getById(int.Parse(Request.QueryString["id"]))
