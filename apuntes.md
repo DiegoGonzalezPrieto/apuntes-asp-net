@@ -176,7 +176,11 @@ Filtre automáticamente a medida que escribimos.
 ```C#
 lsitaFiltrada = listaRegistros.FindAll(r => 
 	r.Nombre.ToUpper().Contains(txtFiltro.Text.ToUpper()))
+
+dgvMiView.DataSource = lsitaFiltrada;
+dgvMiView.DataBind();
 ```
+3. Como extra, podría usarse UpdatePanel para actualizar solo el DGV
 
 
 ### Filtro avanzado
