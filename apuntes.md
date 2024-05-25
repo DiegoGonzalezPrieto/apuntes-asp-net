@@ -124,6 +124,8 @@ Seleccionar un item, pregargar los datos en un formulario, hacer el update.
 
 El id del item puede venir en la URL del Alta, para en ese caso cargar los datos
 del registro y permitir modificar.
+**Importante:** el precargado de datos a editar debe hacer solamente
+si NO es Postback.
 ```C#
 if (Request.QuerString["id"] != null) // ... cargar datos
 
@@ -132,12 +134,16 @@ if (Request.QuerString["id"] != null) // ... cargar datos
 // ...
 ```
 
-Para precargar los dropdown, tienen que estar cargados con todos los valores.
+Para precargar los valores correspondientes en los dropdown, 
+tienen que estar cargados con todos los valores.
+
 Luego:
 ```C#
 ddlTipo.SelectedIndex = ddlTipo.Items.IndexOf(ddlUno.Items.FindByValue(id));
 // u otro método p/ seleccionar programáticamente un valor
 ```
+
+Luego enviar los datos (id incluido) a `negocio.modificar(miRegistro)`
 
 
 
