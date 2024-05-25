@@ -163,7 +163,21 @@ Permite una reactivación.
 
 ### Reactivar Pokemon
 
+El texto del botón "Inactivar" debe ser "Rectivar" 
+cuando el registro está inactivo. (Y viceversa)
+
+
 ### Filtro rápido
+
+Filtre automáticamente a medida que escribimos.
+
+1. Agregar asp:TextBox con AutoPostBack="true" OnTextChanged="(evento)"
+2. En el evento de OnTextChanged:
+```C#
+lsitaFiltrada = listaRegistros.FindAll(r => 
+	r.Nombre.ToUpper().Contains(txtFiltro.Text.ToUpper()))
+```
+
 
 ### Filtro avanzado
 
