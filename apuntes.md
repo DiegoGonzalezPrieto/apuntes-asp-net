@@ -124,8 +124,10 @@ Seleccionar un item, pregargar los datos en un formulario, hacer el update.
 
 El id del item puede venir en la URL del Alta, para en ese caso cargar los datos
 del registro y permitir modificar.
-**Importante:** el precargado de datos a editar debe hacer solamente
-si NO es Postback.
+
+	- **Importante:** el precargado de datos a editar debe hacer solamente
+	si NO es Postback.
+
 ```C#
 if (Request.QuerString["id"] != null) // ... cargar datos
 
