@@ -148,16 +148,18 @@ ddlTipo.SelectedIndex = ddlTipo.Items.IndexOf(ddlUno.Items.FindByValue(id));
 
 Luego enviar los datos (id incluido) a `negocio.modificar(miRegistro)`
 
-### Eliminar Pokemon
-
-**Eliminación física.**
+### Eliminar Pokemon (Baja física)
 
 Agrega un botón de "Eliminar" en la página de Alta/Edición.
 
 **Confirmación de eliminación** puede ser con UpdatePanel.
 
 
-### Inactivar Pokemon
+### Inactivar Pokemon (Baja lógica)
+
+Se cambia la bandera de Activo en el registro.
+Se muestran todos los registros pero indicando si están activos o no...
+Permite una reactivación.
 
 ### Reactivar Pokemon
 
