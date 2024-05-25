@@ -97,6 +97,14 @@ ddlUno.Items.FindByValue(id).Selected = true;
 
 ### Crear Pokemon
 
+1. Deshabilitar campos (como id)
+	```
+	txtId.Enabled = false;
+	```
+2. Cargar desplegables.
+
+
+
 ### Modificar Pokemon
 
 ### Eliminar Pokemon
