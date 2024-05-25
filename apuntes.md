@@ -127,8 +127,18 @@ del registro y permitir modificar.
 ```C#
 if (Request.QuerString["id"] != null) // ... cargar datos
 
-// negocio.getById(int.Parse(Request.QueryString["id"]))
+// x ej: negocio.getById(int.Parse(Request.QueryString["id"]))
+// txtNombre.Text = miItem.Nombre;
+// ...
 ```
+
+Para precargar los dropdown, tienen que estar cargados con todos los valores.
+Luego:
+```C#
+ddlTipo.SelectedIndex = ddlTipo.Items.IndexOf(ddlUno.Items.FindByValue(id));
+// u otro método p/ seleccionar programáticamente un valor
+```
+
 
 
 
