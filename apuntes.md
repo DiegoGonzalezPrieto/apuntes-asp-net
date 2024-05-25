@@ -120,6 +120,19 @@ Luego redirigir a /error con ese dato.
 
 ### Modificar Pokemon
 
+Seleccionar un item, pregargar los datos en un formulario, hacer el update.
+
+El id del item puede venir en la URL del Alta, para en ese caso cargar los datos
+del registro y permitir modificar.
+```C#
+if (Request.QuerString["id"] != null) // ... cargar datos
+
+// negocio.getById(int.Parse(Request.QueryString["id"]))
+```
+
+
+
+
 ### Eliminar Pokemon
 
 ### Inactivar Pokemon
