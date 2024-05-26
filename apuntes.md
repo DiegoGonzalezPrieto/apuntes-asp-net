@@ -1,8 +1,4 @@
 
-
-
-
-
 ### Seteos varios del proyecto
 
 #### Paginador en GridView:
@@ -185,6 +181,10 @@ dgvMiView.DataBind();
 
 ### Filtro avanzado
 
+Para mostrar u ocultar os filtros usa un CheckBox con AutoPostBack="true"
+y con OnCheckedChanged=(evento). En el evento se marca una bandera
+FiltroAvanzado: bool cono true/false.
+Y con un IF muestra y oculta los divs con el formulario.
 
 
 
