@@ -218,16 +218,28 @@ Sería sacar el objeto de la Session.
 
 ### Envío de emails
 
-Usar una clase EmailService:
-- Tiene un atributo SmtpClient
-- Otro atributo MailMessage
-- Se le configura una cuenta de salida (gmail funciona)
+Usar una clase EmailServicio:
+- Tiene un atributo `SmtpClient`
+- Otro atributo `MailMessage`
+- Se le configura una cuenta de salida (gmail funciona):
 ``` C#
-smtpClient.Credentials = new NetworkCredential("user@....", "pass");
-smtpClient.EnableSsl = true;
-smtpClient.Port = 587;
-server.Host = "smtp.gmail.com";
+constructor() {
+	smtpClient.Credentials = new NetworkCredential("user@....", "pass");
+	smtpClient.EnableSsl = true;
+	smtpClient.Port = 587;
+	server.Host = "smtp.gmail.com";
+}
 
+```
+
+- Se arma el correo a enviar:
+``` C#
+email = new MailMessage();
+email.From = new MailAddress("user@...");
+email.To.Add(destinatario);
+email.Subject = "asunto";
+email.IsBodyHtml = true;
+email.Body = "<h1>Hola, este es un correo automático.</h1>";
 ```
 
 
