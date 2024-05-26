@@ -207,6 +207,13 @@ Finalmente un redirect a la página de login exitoso.
 Luego en las páginas protegidas se puede revisar la Session para ver si
 el usuario está logueado y si tiene permisos para ingresar.
 
+El objeto User que esté en la Session debe tener todos los datos pertinentes
+del usuario. Como:
+- ID
+- Tipo de usuario
+- Nombre de usuario
+- Mail de usuario
+
 #### Permisos
 
 Los permisos se manejan a nivel de página o por fragmentos de páginas
@@ -217,6 +224,8 @@ en base al tipo de usuario logueado, o a su ID.
 Sería sacar el objeto de la Session.
 
 ### Envío de emails
+
+> Ojo porque Gmail parece que no permite el envío como está indicado aquí!
 
 Usar una clase EmailServicio:
 - Tiene un atributo `SmtpClient`
@@ -244,6 +253,12 @@ email.Body = "<h1>Hola, este es un correo automático.</h1>";
 
 
 ### Registro Trainee - output SQL - MailTrap
+
+Debe insertar un registro en la base de datos.
+
+Para enviar un correo se usa el serivicio MailTrap.
+Tiene una integración con C#
+
 
 ### MailTrap Configuraciones
 
