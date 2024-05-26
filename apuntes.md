@@ -212,7 +212,24 @@ el usuario está logueado y si tiene permisos para ingresar.
 Los permisos se manejan a nivel de página o por fragmentos de páginas
 en base al tipo de usuario logueado, o a su ID.
 
+#### Logout
+
+Sería sacar el objeto de la Session.
+
 ### Envío de emails
+
+Usar una clase EmailService:
+- Tiene un atributo SmtpClient
+- Otro atributo MailMessage
+- Se le configura una cuenta de salida (gmail funciona)
+``` C#
+smtpClient.Credentials = new NetworkCredential("user@....", "pass");
+smtpClient.EnableSsl = true;
+smtpClient.Port = 587;
+server.Host = "smtp.gmail.com";
+
+```
+
 
 ### Registro Trainee - output SQL - MailTrap
 
