@@ -266,10 +266,28 @@ como `comando.ExecuteScalar()` que devuelve el valro retornado por la BD.
 Para enviar un correo se usa el serivicio MailTrap.
 Tiene una integración con C# que brinda el snippet de código para el EmailServicio
 
+> Ojo porque hay una opción SandBox que es de pruebas y no hace os envíos.
+
 
 ### MailTrap Configuraciones
 
+Para las pruebas se puede usar SandBox que no envía mensajes sino que muestra
+únicamente si el mensaje se enviaría correctamente. No consume la cuota de 500
+envíos gratuitos que brinda MailTrap.
+
+
 ### Login y Acceso a Pantallas PokeApp
+
+Para el login se buscan las credenciales en la base de datos. Si es exitoso,
+se obtienen todos los datos del usuario (incluído el ID) se guardan en Session.
+
+
+#### Seguridad (clase estática)
+
+Este clase puede validar si hay una sesión activa.
+También puede validar si el usuario logueado tiene acceso a cada página en
+particular o a ver fragmentos de la página.
+
 
 ### AutoLogin en Registro
 
