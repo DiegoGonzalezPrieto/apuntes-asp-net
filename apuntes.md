@@ -309,6 +309,7 @@ if (Page is Login) { // Page es instancia de la página Login?
 
 Se puede usar en las páginas que son exclusivas para Admin.
 
+##### También hay que ocultar botones de login cuando hay sesión activa
 
 ### AutoLogin en Registro
 
