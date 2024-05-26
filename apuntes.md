@@ -288,6 +288,20 @@ Este clase puede validar si hay una sesión activa.
 También puede validar si el usuario logueado tiene acceso a cada página en
 particular o a ver fragmentos de la página.
 
+Se puede validar que el usuario esté logueado directamente en la Master Page.
+Pero para eso **hay que exceptuar las páginas que son accesibles sin loguearse**.
+```C#
+// en page_load de la Master Page
+
+// la propiedad Page contiene la página que se está por cargar
+
+if (Page is Login) { // Page es instancia de la página Login?
+
+	// dejar pasar aunque no esté logueado
+}
+
+```
+
 
 ### AutoLogin en Registro
 
