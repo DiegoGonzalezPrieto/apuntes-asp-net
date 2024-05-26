@@ -194,9 +194,23 @@ y el criterio mediante el cual se va a filtrar.
 **Atención:** el estado de la bandera FiltroAvanzado puede perderse en el
 PostBack.
 
-
+- Se puede agregar un botón de Limpiar Filtros
 
 ### Login y Permisos
+
+#### Login
+
+Luego de chequear las credenciales contra la base de datos, si el login es
+exitoso, se agregan los datos del usuario a la Session.
+Finalmente un redirect a la página de login exitoso.
+
+Luego en las páginas protegidas se puede revisar la Session para ver si
+el usuario está logueado y si tiene permisos para ingresar.
+
+#### Permisos
+
+Los permisos se manejan a nivel de página o por fragmentos de páginas
+en base al tipo de usuario logueado, o a su ID.
 
 ### Envío de emails
 
