@@ -235,7 +235,7 @@ constructor() {
 - Se arma el correo a enviar:
 ``` C#
 email = new MailMessage();
-email.From = new MailAddress("user@...");
+email.From = new MailAddress("no-responder@..."); // puede ser nombre de fantasía
 email.To.Add(destinatario);
 email.Subject = "asunto";
 email.IsBodyHtml = true;
