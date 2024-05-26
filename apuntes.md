@@ -254,10 +254,17 @@ email.Body = "<h1>Hola, este es un correo automático.</h1>";
 
 ### Registro Trainee - output SQL - MailTrap
 
-Debe insertar un registro en la base de datos.
+#### Insert y Output
+
+Debe insertar un registro en la base de datos. Para obtener el id del registro
+insertado, se agrega `output inserted.id` justo antes de `VALUES` en la
+sentencia de `INSERT`. Luego en el código de C# hay que ejecutar la sentencia
+como `comando.ExecuteScalar()` que devuelve el valro retornado por la BD.
+
+#### Correo con MailTrap
 
 Para enviar un correo se usa el serivicio MailTrap.
-Tiene una integración con C#
+Tiene una integración con C# que brinda el snippet de código para el EmailServicio
 
 
 ### MailTrap Configuraciones
