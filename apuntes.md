@@ -288,6 +288,8 @@ Este clase puede validar si hay una sesión activa.
 También puede validar si el usuario logueado tiene acceso a cada página en
 particular o a ver fragmentos de la página.
 
+##### Validar sesión a nivel general en Master Page
+
 Se puede validar que el usuario esté logueado directamente en la Master Page.
 Pero para eso **hay que exceptuar las páginas que son accesibles sin loguearse**.
 ```C#
@@ -301,6 +303,10 @@ if (Page is Login) { // Page es instancia de la página Login?
 }
 
 ```
+
+##### Validar si es Admin en Seguridad
+
+Se puede usar en las páginas que son exclusivas para Admin.
 
 
 ### AutoLogin en Registro
