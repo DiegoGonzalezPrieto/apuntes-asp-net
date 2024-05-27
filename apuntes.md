@@ -305,13 +305,26 @@ if (Page is Login) { // Page es instancia de la página Login?
 
 ```
 
+> **El logout se hace con `Session.Clear()` para vaciar la sesión**
+
 ##### Validar si es Admin en Seguridad
 
 Se puede usar en las páginas que son exclusivas para Admin.
 
 ##### También hay que ocultar botones de login cuando hay sesión activa
 
+
+
 ### AutoLogin en Registro
+
+
+Que se loguee automáticamente luego de registrarse:
+
+1. Luego de insertar el usuario en Registro, capturar el Id que devuelve 
+el INSERT.
+2. Guardar datos del usuario en Session["user"].
+3. Redirigir a una pantalla ya ingresada.
+
 
 ### Subir Imagen a Perfil
 
