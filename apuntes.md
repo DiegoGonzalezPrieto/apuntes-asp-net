@@ -455,7 +455,7 @@ Manipulando "a mano" los campos:
 
 ### ASP Validators: Required
 
-> Código a agregar para poder usar Jquery
+> Código a agregar para poder usar validadores de ASP
 
 ``` C#
 	Script para Global.asax
