@@ -385,7 +385,7 @@ Precargar un TextBox de TextMode="date":
 
 ### Enviar NULL a DB
 
-Puede ser con un operador ternario tipo:
+Puede ser con un operador ternario:
 
 ```C#
 datos.setearParametro("@nombre", 
