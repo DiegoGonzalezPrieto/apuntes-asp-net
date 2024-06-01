@@ -455,6 +455,29 @@ Manipulando "a mano" los campos:
 
 ### ASP Validators: Required
 
+> Código a agregar para poder usar Jquery
+
+``` C#
+	Script para Global.asax
+	string JQueryVer = "1.11.3";
+	ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
+	{
+	Path = "~/js/jquery-" + JQueryVer + ".min.js",
+	DebugPath = "~/js/jquery-" + JQueryVer + ".js",
+	CdnPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-" + JQueryVer + ".min.js",
+	CdnDebugPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-" + JQueryVer + ".js",
+	CdnSupportsSecureConnection = true,
+	LoadSuccessExpression = "window.jQuery"
+	});
+	
+	configuración para Web.config
+	<appSettings>
+	<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+	</appSettings>
+```
+
+
+
 ### Validators Range y RegEx
 
 ### Validaciones con JS + Styles
