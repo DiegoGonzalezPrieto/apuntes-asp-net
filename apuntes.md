@@ -328,6 +328,29 @@ el INSERT.
 
 ### Subir Imagen a Perfil
 
+1. Para recibir el archivo de usuario:
+```ASP
+<input type=file id="txtImagen" runat=server class="form-control"/>
+```
+
+2. Para mostrar la imagen
+```ASP
+<asp:Image ID="..." ImageUrl="placeholder.png" 
+	runat="server" CssClass="image-fluid"/> 
+```
+
+3. Crear carpeta /imagenes en el proyecto webforms
+
+4. Disparar un evento al clickear Guardar el formulario.
+
+5. En ese evento:
+	1. Recuperar el directorio base de las imagenes.
+	```C#
+	string rutaBase = Server.MapPath("./"); // devuelve ruta del proyecto
+	```
+	2. 
+
+
 ### Agregar Fecha Nacimiento a Perfil
 
 ### Enviar NULL a DB
