@@ -369,8 +369,10 @@ imgPerfil.ImageUrl = "~/imagenes/" + "perfil-" + user.Id + .jpg
 Label lbl = (Label)Master.FindControl("lblNombreUsuario");
 ```
 
-
 ### Agregar Fecha Nacimiento a Perfil
+
+`<asp:TextBox ... TextMode="date">`
+
 
 ### Enviar NULL a DB
 
