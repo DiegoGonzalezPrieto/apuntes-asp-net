@@ -446,8 +446,9 @@ Agregar `required` a un campo input. O agregar `min` / `max` en el caso de numer
 - Validar en evento, por ejemplo `string.IsNullOrEmpty(txtUsuario.Text)`
 
 - Crear `public static class Validador` para validar:
-	- `ValidarVacio()`
-	- ``
+	- `public static bool ValidarVacio()`
+	- `public static bool ValidarRegex()`
+	- etc.
 
 
 ### ASP Validators: Required
