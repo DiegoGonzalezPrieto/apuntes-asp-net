@@ -385,6 +385,19 @@ Precargar un TextBox de TextMode="date":
 
 ### Enviar NULL a DB
 
+Puede ser con un operador ternario tipo:
+
+```C#
+datos.setearParametro("@nombre", 
+	user.Nombre != null ? user.Nombre : (object)DBNull.Value)
+```
+
+O usando **null coalescing**:
+```C#
+datos.setearParametro("@nombre", 
+	(object)user.Nombre ?? DBNull.Value)
+```
+
 
 ## Validaciones
 
