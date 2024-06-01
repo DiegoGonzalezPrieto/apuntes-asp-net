@@ -419,9 +419,11 @@ datos.setearParametro("@nombre",
 
 En caso de que se escape un error, se puede usar Error Handling.
 
-> Se agrega un bloque de código predefinido en el archivo `Global.asax.cs`
+> Se agrega un bloque de código predefinido en el archivo `Global.asax.cs` (ver docs)
 > 
 > Hay que manejar el error como se quiera.
+
+Tamién se puede manejar a nivel de la Page, con un evento Page_Error()
 
 
 ### Niveles de Validación
