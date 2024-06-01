@@ -377,6 +377,12 @@ Input:
 Lectura:
 `DateTime fecha = DateTime.Parse(txtFecha.Text);`
 
+Lectura de Base de Datos:
+`usuario.Fecha = DateTime.Parse(datos.Lector["fecha"].ToString());`
+
+Precargar un TextBox de TextMode="date":
+` txtFecha.Text = usuario.Fecha.ToString("yyyy-MM-dd"); // !`
+
 ### Enviar NULL a DB
 
 
