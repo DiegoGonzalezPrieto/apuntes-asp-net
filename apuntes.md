@@ -346,9 +346,16 @@ el INSERT.
 5. En ese evento:
 	1. Recuperar el directorio base de las imagenes.
 	```C#
-	string rutaBase = Server.MapPath("./"); // devuelve ruta del proyecto
+	// devuelve ruta de carpeta de imagenes
+	string rutaImagenes = Server.MapPath("./imagenes"); 
 	```
-	2. 
+	2. Guardar archivo:
+	```C#
+	txtImagen.PostedFile.SaveAs(ruta + "perfil-" + user.Id + .jpg);
+	```
+	3. Guardar la relación entre la imagen y el usuario en la BD.
+
+
 
 
 ### Agregar Fecha Nacimiento a Perfil
