@@ -371,8 +371,11 @@ Label lbl = (Label)Master.FindControl("lblNombreUsuario");
 
 ### Agregar Fecha Nacimiento a Perfil
 
-`<asp:TextBox ... TextMode="date">`
+Input:
+`<asp:TextBox ID="txtFecha" ... TextMode="date">`
 
+Lectura:
+`DateTime fecha = DateTime.Parse(txtFecha.Text);`
 
 ### Enviar NULL a DB
 
