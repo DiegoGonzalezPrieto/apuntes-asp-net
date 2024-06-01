@@ -443,9 +443,11 @@ Agregar `required` a un campo input. O agregar `min` / `max` en el caso de numer
 
 ### Validaciones Clásicas
 
+Manipulando "a mano" los campos:
+
 - Validar en evento, por ejemplo `string.IsNullOrEmpty(txtUsuario.Text)`
 
-- Crear `public static class Validador` para validar:
+- Se puede crear una clase `public static class Validador` para validar:
 	- `public static bool ValidarVacio()`
 	- `public static bool ValidarRegex()`
 	- etc.
