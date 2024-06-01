@@ -361,6 +361,7 @@ el INSERT.
 // la virgulilla refiere a la raíz del proyecto webforms
 imgPerfil.ImageUrl = "~/imagenes/" + "perfil-" + user.Id + .jpg
 ```
+> La ruta de la imagen del usuario logueado se puede guardar en la Session.
 
 #### Acceder a elementos de la Master Page desde otra paǵina
 
