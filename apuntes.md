@@ -351,11 +351,22 @@ el INSERT.
 	```
 	2. Guardar archivo:
 	```C#
+	// ver de obtener la extensión del archivo
 	txtImagen.PostedFile.SaveAs(ruta + "perfil-" + user.Id + .jpg);
 	```
 	3. Guardar la relación entre la imagen y el usuario en la BD.
 
+6. Cargar la imagen almacenada donde sea necesario.
+```C#
+// la virgulilla refiere a la raíz del proyecto webforms
+imgPerfil.ImageUrl = "~/imagenes/" + "perfil-" + user.Id + .jpg
+```
 
+#### Acceder a elementos de la Master Page desde otra paǵina
+
+```C#
+Label lbl = (Label)Master.FindControl("lblNombreUsuario");
+```
 
 
 ### Agregar Fecha Nacimiento a Perfil
