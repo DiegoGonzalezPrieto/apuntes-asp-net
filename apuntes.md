@@ -409,9 +409,11 @@ datos.setearParametro("@nombre",
 ### Manejo de Errores
 
 * En la Master (donde filtramos qué páginas son accesibles para usuarios logueados):
+
+
 	`if (Page is Error) { // deja pasar aunque no esté logueado }`
 
-* Si hay excepción, guardar mensaje de error en Session["error"] y redirigir a Error.aspx
+* Si hay excepción, guardar mensaje de error en `Session["error"]` y redirigir a Error.aspx
 
 
 ### Manejo de Errores Genérico
