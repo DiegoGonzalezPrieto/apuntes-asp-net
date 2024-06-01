@@ -428,6 +428,21 @@ Tamién se puede manejar a nivel de la Page, con un evento Page_Error()
 
 ### Niveles de Validación
 
+#### En HTML o JS
+
+Agregar `required` a un campo input. O agregar `min` / `max` en el caso de numeros.
+
+> ! El problema es que el HTML / JS se puede manipular. Hay que hacer validación en back.
+
+#### En CodeBehind
+
+
+#### En el modelo (lanzando excepciones desde clases de dominio)
+
+
+#### En Base de Datos
+
+
 ### Validaciones Clásicas
 
 ### ASP Validators: Required
