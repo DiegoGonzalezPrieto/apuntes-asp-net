@@ -410,13 +410,19 @@ datos.setearParametro("@nombre",
 
 * En la Master (donde filtramos qué páginas son accesibles para usuarios logueados):
 
-
 	`if (Page is Error) { // deja pasar aunque no esté logueado }`
 
 * Si hay excepción, guardar mensaje de error en `Session["error"]` y redirigir a Error.aspx
 
 
 ### Manejo de Errores Genérico
+
+En caso de que se escape un error, se puede usar Error Handling.
+
+> Se agrega un bloque de código predefinido en el archivo `Global.asax.cs`
+> 
+> Hay que manejar el error como se quiera.
+
 
 ### Niveles de Validación
 
