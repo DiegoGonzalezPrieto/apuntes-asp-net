@@ -436,14 +436,19 @@ Agregar `required` a un campo input. O agregar `min` / `max` en el caso de numer
 
 #### * En CodeBehind
 
-
 #### * En el modelo (lanzando excepciones desde clases de dominio)
-
 
 #### * En Base de Datos
 
 
 ### Validaciones Clásicas
+
+- Validar en evento, por ejemplo `string.IsNullOrEmpty(txtUsuario.Text)`
+
+- Crear `public static class Validador` para validar:
+	- `ValidarVacio()`
+	- ``
+
 
 ### ASP Validators: Required
 
