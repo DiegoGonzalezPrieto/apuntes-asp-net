@@ -472,8 +472,8 @@ Manipulando "a mano" los campos:
 	});
 	
 	// O alternativamente modificar para tener jscript local (no jquery):
+	// configuración para Web.config
 
-	configuración para Web.config
 	<appSettings>
 	<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
 	</appSettings>
@@ -484,6 +484,16 @@ Manipulando "a mano" los campos:
 
 2. Asegurarse de tener el jQuery registrado  o la config
 de UnobtrusiveValidationMode.
+
+3. Dentro del evento de Guardar/Editar que debe ser validado, revisar:
+``` C#
+	Page.Validate();
+
+	if (!Page.IsValid()) {
+	// falló algún validador
+	return;
+	}
+```
 
 ### Validators Range y RegEx
 
