@@ -516,5 +516,25 @@ El `<asp:RegularExpressionValidator>` permite validar un patrón
 - Manipula el DOM (Document Object Model) -> el documento HTML
 
 1. El campo a validar debe tener un id estático. 
-Configurar `<asp:TextBox ... **ClientIdMode="Static"**>`
+Configurar `<asp:TextBox ... ClientIdMode="Static">`
+
+2. En la etiqueta `<script> Acá va el JS que se escribe</script>`:
+
+``` C#
+function validar() {
+	const txtApellido = document.getElementById("idDelElemento");
+	if (txtApellido.value == "") {
+		// el input está vacío
+		return false;
+	}
+}
+```
+
+3. Hay que llamar al método de JS desde el botón de Guardar desde `OnClientClick`:
+
+- `<asp:TextBox OnClick=btn_Guardar_click OnClientClick=return validar()>` 
+
+- Si la función retorna `false`, la ejecución se detiene.
+
+
 
