@@ -525,8 +525,12 @@ function validar() {
 	const txtApellido = document.getElementById("idDelElemento");
 	if (txtApellido.value == "") {
 		// el input está vacío
+
+		txtApellido.classList.add("is-invalid"); // lo marca en rojo
 		return false;
 	}
+	txtApellido.classList.remove("is-invalid"); // le quita el rojo
+	return true;
 }
 ```
 
