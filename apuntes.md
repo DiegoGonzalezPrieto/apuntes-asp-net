@@ -476,9 +476,12 @@ Manipulando "a mano" los campos:
 	</appSettings>
 ```
 
-
+1. Agregar `<asp:RequiredFieldValidator>` debajo del control a validar.
+	* `ErrorMessage="mensaje de error"` y `ControlToValidate="idControlAValidar"`
 
 ### Validators Range y RegEx
+
+
 
 ### Validaciones con JS + Styles
 
