@@ -458,7 +458,8 @@ Manipulando "a mano" los campos:
 > Código a agregar para poder usar validadores de ASP
 
 ``` C#
-	Script para Global.asax
+	// Script para agregar jQuery en Global.asax
+
 	string JQueryVer = "1.11.3";
 	ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
 	{
@@ -470,6 +471,8 @@ Manipulando "a mano" los campos:
 	LoadSuccessExpression = "window.jQuery"
 	});
 	
+	// O alternativamente modificar para tener jscript local (no jquery):
+
 	configuración para Web.config
 	<appSettings>
 	<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
@@ -478,6 +481,9 @@ Manipulando "a mano" los campos:
 
 1. Agregar `<asp:RequiredFieldValidator>` debajo del control a validar.
 	* `ErrorMessage="mensaje de error"` y `ControlToValidate="idControlAValidar"`
+
+2. Asegurarse de tener el jQuery registrado  o la config
+de UnobtrusiveValidationMode.
 
 ### Validators Range y RegEx
 
