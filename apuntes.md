@@ -494,9 +494,19 @@ de UnobtrusiveValidationMode.
 	return;
 	}
 ```
+4. Agregar estilo (color rojo, tamaño, etc...) al texto del validador.
 
 ### Validators Range y RegEx
 
+El `<asp:RangeValidator>` valida un rango de números o cantidad de caracteres.
+
+- Tiene un `Type="..."` para definir el tipo de valor que valida (string, moneda...)
+
+- Con `Minimum Value=` y `MaximumValue=` se define el rango.
+
+El `<asp:RegularExpressionValidator>` permite validar un patrón
+
+- Se le confifgura el `ValidationExpression=[regex]` con el patrón a validar.
 
 
 ### Validaciones con JS + Styles
