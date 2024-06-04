@@ -511,4 +511,10 @@ El `<asp:RegularExpressionValidator>` permite validar un patrón
 
 ### Validaciones con JS + Styles
 
+- Valida directamente en el cliente (en el navegador).
+
+- Manipula el DOM (Document Object Model) -> el documento HTML
+
+1. El campo a validar debe tener un id estático. 
+Configurar `<asp:TextBox ... **ClientIdMode="Static"**>`
 
